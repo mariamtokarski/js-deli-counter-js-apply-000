@@ -1,5 +1,3 @@
-var katzDeli = []
-
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name)
   return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line."
@@ -17,14 +15,12 @@ function nowServing(katzDeliLine){
 function currentLine(katzDeliLine){
   if (katzDeliLine.length<1) {
     return "The line is currently empty."
-  } else { if (katzDeliLine.length>0) {
-    return
-  }
+  } else { 
     for (var i = 0; i < katzDeliLine.length; i++) {
       var katzDeli = "The line is currently: "
       var position = i + 1
       var person = katzDeliLine[i]
       katzDeli += position + ". " + person + ", "
+    }
   }
-}
 }
