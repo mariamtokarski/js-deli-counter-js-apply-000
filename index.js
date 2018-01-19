@@ -22,5 +22,6 @@ function currentLine(katzDeliLine){
       var person = katzDeliLine[i]
       katzDeli += position + ". " + person + ", "
     }
+    return katzDeli.slice(0,katzDeliLine.length - 1)
   }
 }
