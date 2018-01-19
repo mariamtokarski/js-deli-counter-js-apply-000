@@ -16,11 +16,11 @@ function currentLine(katzDeliLine){
   if (katzDeliLine.length<1) {
     return "The line is currently empty."
  } else {
+      var katzDeli = "The line is currently: "
        for (var i = 0; i < katzDeliLine.length; i++) {
-        var katzDeli = "The line is currently: "
         var position = i + 1
       katzDeli += position + ". " + katzDeliLine[i] + ", "
     }
-    return katzDeliLine.slice(0,katzDeliLine.length + 1)
+    return katzDeli.slice(0,katzDeliLine.length + 1)
   }
 }
