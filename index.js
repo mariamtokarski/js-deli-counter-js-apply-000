@@ -22,7 +22,7 @@ function currentLine(katzDeliLine){
       var katzDeli = "The line is currently: "
       var position = i + 1
       var person = katzDeliLine[i]
-      katzDeli += position + ". " + person + ", "
+      katzDeli.push += position + ". " + person + ", "
     return katzDeli
   }
 }
