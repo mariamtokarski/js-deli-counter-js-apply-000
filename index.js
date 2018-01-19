@@ -21,5 +21,6 @@ function currentLine(katzDeliLine){
         var position = i + 1
       katzDeli += position + ". " + katzDeliLine[i] + ", "
     }
-    return katzDeli.slice(0,katzDeli.length - 2)
+    return katzDeli.slice(0,katzDeli.length - 1)
   }
+}
