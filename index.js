@@ -22,7 +22,7 @@ function currentLine(katzDeliLine){
 
     for (var i = 0; i < katzDeliLine.length; i++) {
       var position = i + 1
-      var person = katzDeliLine[i]
+      var person = "katzDeliLine[i]"
       katzDeli += position + ". " + person + ", "
     }
     return katzDeli.slice(0,katzDeliLine.length - 1)
