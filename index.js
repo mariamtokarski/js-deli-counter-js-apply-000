@@ -22,8 +22,8 @@ function currentLine(katzDeliLine){
       var katzDeli = "The line is currently: "
       var position = i + 1
       var person = katzDeliLine[i]
-      katzDeli.push += position + ". " + person + ", "
-    return katzDeli
+      katzDeli += position + ". " + person + ", "
+    return katzDeli.slice(0,katzDeliLine-1)
   }
 }
 }
