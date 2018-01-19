@@ -21,7 +21,7 @@ function currentLine(katzDeliLine){
     for (var i = 0; i < katzDeliLine.length; i++) {
       var katzDeli = "The line is currently: "
       var position = i + 1
-      var person = "katzDeliLine[i]"
+      var person = katzDeliLine[i]
       katzDeli += position + ". " + person + ", "
     return katzDeli
   }
